@@ -10,6 +10,8 @@ router.get('/', function(req, res) {
 /* GET answer. */
 router.get('/answer', questionController.getQuestion);
 
+router.post('/answer', questionController.confirmAnswer);
+
 /* GET users listing. */
 router.get('/users', function(req, res) {
     res.send('respond with a resource');
