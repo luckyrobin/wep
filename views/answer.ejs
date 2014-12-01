@@ -51,7 +51,7 @@
                 $.ajax({
                     type: "POST",
                     url: "answer",
-                    data: "answer=" + result,
+                    data: result,
                     success: function (msg) {
                         alert(msg);
                         //window.location.href = wrongs ? "result_error.html?question=" + wrongs : "result_yes.html";
